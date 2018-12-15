@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">网络检测</string>
+    <string name="str_netchecking">正在检测网络，请稍等...</string>
+</resources>
