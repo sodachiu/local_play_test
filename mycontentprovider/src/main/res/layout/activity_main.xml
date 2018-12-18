@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/ll_vertical_base_style"
+        android:background="@color/colorDeepGrey">
+
+        <TextView
+            style="@style/title_tv_style"
+            android:text="@string/background_mod"
+            android:id="@+id/tv_now_mod"/>
+
+        <Button
+            style="@style/btn_base_style"
+            android:text="@string/import_resource"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_import_resource"/>
+        <Button
+            style="@style/btn_base_style"
+            android:text="@string/preview"
+            android:id="@+id/btn_preview"/>
+        <Button
+            style="@style/btn_base_style"
+            android:text="@string/change_mod"
+            android:id="@+id/btn_change_mod"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_vertical_base_style"
+        android:background="@color/colorLightGrey">
+
+        <TextView
+            style="@style/title_tv_style"
+            android:text="@string/resource_list"/>
+
+    </LinearLayout>
+
+</LinearLayout>

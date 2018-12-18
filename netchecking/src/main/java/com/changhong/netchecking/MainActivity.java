@@ -2,11 +2,11 @@ package com.changhong.netchecking;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ethernet.EthernetManager;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemProperties;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -25,6 +25,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         SystemProperties.set("sys.ch.boot.waiting", "true");
+        Intent broadcast = new Intent("com.changhong.netchecking.start");
+        sendBroadcast(broadcast);
         mContext = this;
         initView();
         initTimeCount();
@@ -35,7 +37,7 @@ public class MainActivity extends Activity {
 
     private void initView()
     {
-        checkingTextV = (TextView)findViewById(R.id.net_checking_tv_text);
+        checkingTextV = (TextView)findViewById(R.id.net_checking_tv_text );
     }
 
     private void initTimeCount()

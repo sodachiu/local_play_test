@@ -1,1 +1,1 @@
-include ':netchecking'
+include ':netchecking', ':mycontentprovider'

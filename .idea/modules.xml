@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mycontentprovider/mycontentprovider.iml" filepath="$PROJECT_DIR$/mycontentprovider/mycontentprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/netchecking.iml" filepath="$PROJECT_DIR$/netchecking.iml" />
       <module fileurl="file://$PROJECT_DIR$/netchecking/netchecking-netchecking.iml" filepath="$PROJECT_DIR$/netchecking/netchecking-netchecking.iml" />
     </modules>
