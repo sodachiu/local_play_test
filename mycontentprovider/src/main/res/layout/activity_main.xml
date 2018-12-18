@@ -26,6 +26,10 @@
             android:text="@string/change_mod"
             android:id="@+id/btn_change_mod"/>
 
+        <TextView
+            style="@style/tv_base_style"
+            android:id="@+id/tv_prompt"/>
+
 
 
     </LinearLayout>

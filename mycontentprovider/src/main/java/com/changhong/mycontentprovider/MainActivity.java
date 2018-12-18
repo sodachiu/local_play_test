@@ -23,7 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public static final String TABLE_RESOURCE = PROVIDER_URI + "/resource";
     public static final String DEFAULT_MODE = "/default_mode";
     private String nowMode;
-    private TextView tvMode;
+    private TextView tvMode, tvPrompt;
     private Button btnChangeMod, btnPreview, btnImport;
 
 
@@ -55,6 +55,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     void initView() {
         Log.i(TAG, "initView: ");
         tvMode = (TextView) findViewById(R.id.tv_now_mod);
+        tvPrompt = (TextView) findViewById(R.id.tv_prompt);
         btnChangeMod = (Button) findViewById(R.id.btn_change_mod);
         btnImport = (Button) findViewById(R.id.btn_import_resource);
         btnPreview = (Button) findViewById(R.id.btn_preview);
@@ -62,6 +63,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
         String modeText = getString(R.string.background_mod);
         modeText = String.format(modeText, getMode());
         tvMode.setText(modeText);
+
+        if (nowMode.equals("image")) {
+            tvPrompt.setText(getString(R.string.image_prompt));
+        } else if (nowMode.equals("video")) {
+            tvPrompt.setText(getString(R.string.video_mod));
+        }
 
         btnPreview.setOnClickListener(this);
         btnImport.setOnClickListener(this);
@@ -111,6 +118,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
         String modeText = getString(R.string.background_mod);
         modeText = String.format(modeText, getMode());
         tvMode.setText(modeText);
+
+        if (nowMode.equals("image")) {
+            tvPrompt.setText(getString(R.string.image_prompt));
+        } else if (nowMode.equals("video")) {
+            tvPrompt.setText(getString(R.string.video_prompt));
+        }
+
+        // 右边的素材列表也需要变化
 
     }
 }

@@ -9,7 +9,7 @@
     <string name="import_resource">导入素材</string>
     <string name="change_mod">切换模式</string>
 
-    <string name="video_prompt">视频文件最多只能选择一个，且文件大小不超过xxx，时长不超过xxx，
+    <string name="video_prompt">提示：视频文件最多只能选择一个，且文件大小不超过xxx，时长不超过xxx，
         如您没有导入视频文件，则仍以图片作为背景。</string>
-    <string name="image_prompt">图片文件最多只能选择五张。如您没有导入图片，则以默认图片为背景</string>
+    <string name="image_prompt">提示：图片文件最多只能选择五张。如您没有导入图片，则以默认图片为背景</string>
 </resources>
